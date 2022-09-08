@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
- * This rrturns a string from printf
+ * main - Entry point
+ *
+ * Return:This rrturns a string from printf
  */
 int main(void)
 {
