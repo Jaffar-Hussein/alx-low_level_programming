@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 /**
  * _islower - checks if ots lower case
  *
@@ -10,7 +9,7 @@
 
 int _islower(int c)
 {
-	if (islower(c))
+	if (c > 96 && c < 123)
 	{
 		return (1);
 	}
