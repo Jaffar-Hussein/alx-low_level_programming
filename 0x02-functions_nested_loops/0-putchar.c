@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 /**
  * main - prints _putchar followed by new line
@@ -10,9 +9,9 @@
 int main(void)
 {
 	char *s = "_putchar";
-	long i;
+	int i;
 
-	for (i; i < strlen(s); i++)
+	for (i; i < 8; i++)
 	{
 		putchar(s[i]);
 	}
