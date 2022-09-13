@@ -15,6 +15,10 @@ void jack_bauer(void)
 	{
 		for (j = 0; j < 10; j++)
 		{
+			if (i == 2 && j > 3)
+			{
+				break;
+			}
 			for (k = 0; k < 6; k++)
 			{
 				for (l = 0; l < 10; l++)
@@ -27,10 +31,8 @@ void jack_bauer(void)
 					putchar('\n');
 				}
 			}
-		}
-		if (i == 2 && j == 3 && k == 5 && l == 9)
-		{
-			break;
+		 
+
 		}
        	}
 }
