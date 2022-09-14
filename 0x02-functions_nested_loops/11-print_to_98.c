@@ -76,8 +76,10 @@ void print_to_98(int n)
                         {
                                 putchar('0');
                         }
-                        if (n == 98)
+                        if (n == 99)
                         {
+				putchar(9 + '0');
+				putchar(8 + '0');
                                 putchar('\n');
                                 break;
                         }
