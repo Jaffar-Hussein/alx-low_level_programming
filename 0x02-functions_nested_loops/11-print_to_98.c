@@ -12,7 +12,7 @@ void print_to_98(int n)
 		{
 			if(n % 100/10 > 0)
 			{
-				putchar((n % 100/10 +48);
+				putchar((n % 100/10) + 48);
 			}
 			if (n % 10)
 			{
@@ -20,7 +20,7 @@ void print_to_98(int n)
 			}
 			if (n % 10 == 0)
 			{
-				putchar('0);
+				putchar('0');
 			}
 			if (n == 98)
 			{
