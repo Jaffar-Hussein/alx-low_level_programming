@@ -32,8 +32,8 @@ void print_to_98(int n)
 		}
 		else if (n < 0)
 		{
-			putchar('-');
 			int val = (n * -1);
+			putchar('-');
 			if (val % 100/10 > 0)
 			{
 				putchar((val % 100/10 + 48));
@@ -50,5 +50,6 @@ void print_to_98(int n)
 			putchar(32);
 			n++;
 		}
+	}
 }
 
