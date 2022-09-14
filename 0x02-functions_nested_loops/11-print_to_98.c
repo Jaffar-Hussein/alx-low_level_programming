@@ -10,9 +10,9 @@ void print_to_98(int n)
 	{
 		if (n >= 0)
 		{
-			if(n % 100/10 > 0)
+			if (n % 100 / 10 > 0)
 			{
-				putchar((n % 100/10) + 48);
+				putchar((n % 100 / 10) + 48);
 			}
 			if (n % 10)
 			{
@@ -35,15 +35,15 @@ void print_to_98(int n)
 		{
 			int val = (n * -1);
 			putchar('-');
-			if (val % 1000/100 > 0)
+			if (val % 1000 / 100 > 0)
 			{
-				putchar((val % 1000/100) + 48);
+				putchar((val % 1000 / 100) + 48);
 			}
-			if (val % 100/10 > 0)
+			if (val % 100 / 10 > 0)
 			{
-				putchar((val % 100/10 + 48));
+				putchar((val % 100 / 10 + 48));
 			}
-			if (val % 100/10 == 0 && val > 10)
+			if (val % 100 / 10 == 0 && val > 10)
 			{
 				putchar('0');
 			}
@@ -64,15 +64,15 @@ void print_to_98(int n)
         {
                 if (n >= 0)
                 {
-			if (n % 1000/100 > 0)
+			if (n % 1000 / 100 > 0)
 			{
-				putchar((n % 1000/100) + 48);
+				putchar((n % 1000 / 100) + 48);
 			}
-                        if(n % 100/10 > 0)
+                        if(n % 100 / 10 > 0)
                         {
-                                putchar((n % 100/10) + 48);
+                                putchar((n % 100 / 10) + 48);
                         }
-			if (n % 100/10 == 0)
+			if (n % 100 / 10 == 0)
 			{
 				putchar('0');
 			}
@@ -96,9 +96,6 @@ void print_to_98(int n)
                         putchar(44);
                         putchar(32);
                         n --;
-                }
-               
+                }      
         }
-
 }
-
