@@ -56,6 +56,10 @@ void print_to_98(int n)
         {
                 if (n >= 0)
                 {
+			if (n % 1000/100 > 0)
+			{
+				putchar((n % 1000/100) + 48);
+			}
                         if(n % 100/10 > 0)
                         {
                                 putchar((n % 100/10) + 48);
