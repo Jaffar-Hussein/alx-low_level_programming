@@ -51,6 +51,34 @@ void print_to_98(int n)
 			putchar(32);
 			n++;
 		}
-	}
+	}      
+      	while(n >= 98)
+        {
+                if (n >= 0)
+                {
+                        if(n % 100/10 > 0)
+                        {
+                                putchar((n % 100/10) + 48);
+                        }
+                        if (n % 10)
+                        {
+                                putchar(n % 10 + 48);
+                        }
+                        if (n % 10 == 0)
+                        {
+                                putchar('0');
+                        }
+                        if (n == 98)
+                        {
+                                putchar('\n');
+                                break;
+                        }
+                        putchar(44);
+                        putchar(32);
+                        n --;
+                }
+               
+        }
+
 }
 
