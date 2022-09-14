@@ -37,7 +37,7 @@ void print_to_98(int n)
 			putchar('-');
 			if (val % 1000/100 > 0)
 			{
-				putchar((n % 1000/100) + 48);
+				putchar((val % 1000/100) + 48);
 			}
 			if (val % 100/10 > 0)
 			{
