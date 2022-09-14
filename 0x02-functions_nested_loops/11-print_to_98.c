@@ -43,7 +43,7 @@ void print_to_98(int n)
 			{
 				putchar((val % 100/10 + 48));
 			}
-			if (val % 100/10 == 0)
+			if (val % 100/10 == 0 && val > 10)
 			{
 				putchar('0');
 			}
