@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  * print_to_98 - prints to 98
  * @n: number to be printed
  */
