@@ -6,7 +6,7 @@
  */
 void print_to_98(int n)
 {
-	while(n <= 98)
+	while (n <= 98)
 	{
 		if (n >= 0)
 		{
@@ -29,7 +29,7 @@ void print_to_98(int n)
 			}
 			putchar(44);
 			putchar(32);
-			n ++;
+			n++;
 		}
 		else if (n < 0)
 		{
@@ -60,7 +60,7 @@ void print_to_98(int n)
 			n++;
 		}
 	}      
-      	while(n > 98)
+	while (n > 98)
         {
                 if (n >= 0)
                 {
@@ -90,12 +90,12 @@ void print_to_98(int n)
 				putchar(' ');
 				putchar(9 + '0');
 				putchar(8 + '0');
-                                putchar('\n');
-                                break;
+				putchar('\n');
+				break;
                         }
                         putchar(44);
                         putchar(32);
-                        n --;
+                        n--;
                 }      
         }
 }
