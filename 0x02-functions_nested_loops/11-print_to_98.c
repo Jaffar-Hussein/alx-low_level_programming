@@ -2,7 +2,7 @@
 
 /*
  * print_to_98 - prints to 98
- *
+ * @n: number to be printed
  */
 void print_to_98(int n)
 {
