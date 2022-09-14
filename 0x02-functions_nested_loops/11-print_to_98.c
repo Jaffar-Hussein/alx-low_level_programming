@@ -33,14 +33,14 @@ void print_to_98(int n)
 		else if (n < 0)
 		{
 			putchar('-');
-			int val = n * -1;
+			int val = (n * -1);
 			if (val % 100/10 > 0)
 			{
 				putchar((val % 100/10 + 48));
 			}
 			if (val % 10)
 			{
-				putchar(val % 10 + 48)
+				putchar(val % 10 + 48);
 			}
 			if (val % 10 == 0)
 			{
