@@ -68,6 +68,10 @@ void print_to_98(int n)
                         {
                                 putchar(n % 10 + 48);
                         }
+			if (n % 100 == 0)
+			{
+				putchar('0');
+			}
                         if (n % 10 == 0)
                         {
                                 putchar('0');
