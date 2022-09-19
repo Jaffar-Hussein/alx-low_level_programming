@@ -1,19 +1,26 @@
-#include "main.h"
+#include <stdio.h>
+#include <string.h>
 
 /**
- * main - check the code for
- *
- * Return: Always 0.
+ * puts_half - prints half of the string
+ * @str: input string to print
+ * Return: nothing
  */
-int main(void)
+void puts_half(char *str)
 {
-    int array[5];
+int midlen;
+int len;
 
-    array[0] = 98;
-    array[1] = 402;
-    array[2] = -198;
-    array[3] = 298;
-    array[4] = -1024;
-    print_array(array, 5);
-    return (0);
+len = strlen(str);
+midlen = len / 2;
+if (len % 2 == 1)
+{
+midlen++;
+}
+while (midlen < len)
+{
+putchar(str[midlen]);
+midlen++;
+}
+putchar('\n');
 }
