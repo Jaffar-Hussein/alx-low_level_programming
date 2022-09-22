@@ -1,18 +1,19 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code
- *
+ * string_toupper - converts string to upper
+ * @str: string parameter to be converted to uppercase
  * Return: Always 0.
  */
-int main(void)
+char *string_toupper(char *str)
 {
-    char str[] = "Look up!\n";
-    char *ptr;
+int i;
 
-    ptr = string_toupper(str);
-    printf("%s", ptr);
-    printf("%s", str);
-    return (0);
+for (i = 0; str[i] != '\0'; i++)
+{
+if (str[i] >= 'a' && str[i] <= 'z')
+	str[i] = (int) str[i] - 32;
+
+}
+return (str);
 }
