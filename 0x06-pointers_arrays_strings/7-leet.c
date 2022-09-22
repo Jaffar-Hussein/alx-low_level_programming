@@ -1,18 +1,28 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code
+ * leet - transform to leet
+ * @s: char array string type
  *
- * Return: Always 0.
+ * Return: s transformed
  */
-int main(void)
-{
-    char str[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
-    char *ptr;
 
-    ptr = cap_string(str);
-    printf("%s", ptr);
-    printf("%s", str);
-    return (0);
+char *leet(char *s)
+{
+	int i = 0, ii;
+	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+
+	while (s[i])
+	{
+		for (ii = 0; ii <= 7; ii++)
+		{
+			if (s[i] == leet[ii] ||
+					s[i] - 32 == leet[ii])
+				s[i] = ii + '0';
+		}
+
+		i++;
+	}
+
+	return (s);
 }
