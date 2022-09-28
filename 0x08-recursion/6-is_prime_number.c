@@ -13,7 +13,6 @@ int is_prime_number(int n)
 	if (n <= 1)
 	{
 		return (0);
-
 	}
 	else if (n == 2)
 	{
@@ -21,11 +20,9 @@ int is_prime_number(int n)
 	}
 	return (more_prime(n, 2));
 }
-
 /**
- * more_prime - Itereates over the rest of the primes 
- * 		and tries each combination
- * @n: The number being chekced 
+ * more_prime - Itereates over and tries each combination
+ * @n: The number being checked
  * @c: The counter
  *
  * Return: 1 if prime 0 otherwise
@@ -36,7 +33,7 @@ int more_prime(int n, int c)
 	{
 		return (0);
 	}
-	else if (c > n/2)
+	else if (c > n / 2)
 	{
 		return (1);
 	}

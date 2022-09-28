@@ -4,7 +4,7 @@ int perfect_square(int n, int c);
  *
  * @n: The squared digit
  *
- * Return: square root or -1 
+ * Return: square root or -1
  */
 int _sqrt_recursion(int n)
 {
@@ -14,7 +14,6 @@ int _sqrt_recursion(int n)
 	}
 	return (perfect_square(n, 1));
 }
-
 /**
  * perfect_square - Returns the square
  *
@@ -25,7 +24,7 @@ int _sqrt_recursion(int n)
  */
 int perfect_square(int n, int c)
 {
-	if(c < n/2)
+	if (c < n / 2)
 	{
 		if (c * c == n)
 		{
