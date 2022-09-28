@@ -32,7 +32,7 @@ int is_prime_number(int n)
  */
 int more_prime(int n, int c)
 {
-	if (n % c != 0)
+	if (n % c == 0)
 	{
 		return (0);
 	}
