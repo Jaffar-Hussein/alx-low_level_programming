@@ -19,7 +19,7 @@ int is_prime_number(int n)
 	{
 		return (1);
 	}
-	return (more_prime(n, 1));
+	return (more_prime(n, 2));
 }
 
 /**
@@ -35,6 +35,10 @@ int more_prime(int n, int c)
 	if (n % c != 0)
 	{
 		return (0);
+	}
+	else if (c > n/2)
+	{
+		return (1);
 	}
 	return (more_prime(n, c + 1));
 }
