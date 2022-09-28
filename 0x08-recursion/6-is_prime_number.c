@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+int more_prime(int n, int c);
 /**
  * s_prime_number - checks if its prime
  *
@@ -18,5 +19,22 @@ int s_prime_number(int n)
 	{
 		return (1);
 	}
-	return (0);
+	return (more_prime(n, 1));
+}
+
+/**
+ * more_prime - Itereates over the rest of the primes 
+ * 		and tries each combination
+ * @n: The number being chekced 
+ * @c: The counter
+ *
+ * Return: 1 if prime 0 otherwise
+ */
+int more_prime(int n, int c)
+{
+	if (n % c != 0)
+	{
+		return (0);
+	}
+	return (more_prime(n, c + 1));
 }
