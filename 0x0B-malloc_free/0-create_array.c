@@ -4,7 +4,7 @@
  *
  * @size: The size of the array
  * @c: First letter
- * Return: null if size is 0 
+ * Return: null if size is 0
  */
 
 char *create_array(unsigned int size, char c)
@@ -18,5 +18,5 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	}
 	array[0] = c;
-	return (array);
+	return (array[0]);
 }
