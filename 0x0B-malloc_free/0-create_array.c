@@ -9,9 +9,9 @@
 
 char *create_array(unsigned int size, char c)
 {
-	char *array[size];
+	char *array;
 
-	array = malloc(size);
+	array = malloc((sizeof char) * size);
 
 	if (array == NULL || size == 0)
 	{
