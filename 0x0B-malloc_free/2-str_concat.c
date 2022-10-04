@@ -29,7 +29,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	length1 = strlength(s1);
 	length2 = strlength(s2);
-	length_conc = (length1 - 1) + (length2);
+	length_conc = (length1 + 1) + (length2);
 	
 	concat = malloc(sizeof(char) * length_conc);
 	if (concat == 0)
@@ -53,7 +53,7 @@ int strlength(char *s1)
 	int length;
 	int i;
 
-	length = 1;
+	length = 0;
 	for (i = 0; s1[i] != '\0'; i++)
 	{
 		length++;
