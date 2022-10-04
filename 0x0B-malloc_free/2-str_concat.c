@@ -23,13 +23,16 @@ char *str_concat(char *s1, char *s2)
 	{
 		length1 = 0;
 	}
-	else if (s2 == 0)
+	else
+	{
+		length1 = strlength(s1);
+	}
+	if (s2 == 0)
 	{
 		length2 = 0;
 	}
 	else
 	{
-	length1 = strlength(s1);
 	length2 = strlength(s2);
 	}
 	length_conc = (length1 + 1) + (length2);
