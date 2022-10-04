@@ -3,7 +3,7 @@
 /**
  * *_strdup - returns a pointer duplicate of string
  *
- * @*str: String to be duplicated
+ * @str: String to be duplicated
  *
  * Return: Null if str is null pointer otherwise
  */
@@ -32,5 +32,5 @@ char *_strdup(char *str)
 	{
 		dup[j] = str[j];
 	}
-	return (dup);	
+	return (dup);
 }
