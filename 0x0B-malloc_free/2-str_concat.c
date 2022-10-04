@@ -36,11 +36,10 @@ char *str_concat(char *s1, char *s2)
 	length2 = strlength(s2);
 	}
 	length_conc = (length1 + 1) + (length2);
-	
 	concat = malloc(sizeof(char) * length_conc);
 	if (concat == 0)
 	{
-		return(0);
+		return (0);
 	}
 	for (i = 0; i <= length1; i++)
 	{
@@ -53,7 +52,13 @@ char *str_concat(char *s1, char *s2)
 	concat[length_conc] = '\0';
 	return (concat);
 }
-
+/**
+ * strlength - checks length of string
+ *
+ * @s1:string of interest
+ *
+ * Return: length
+ */
 int strlength(char *s1)
 {
 	int length;
