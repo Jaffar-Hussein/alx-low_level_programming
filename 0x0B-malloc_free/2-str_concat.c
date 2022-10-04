@@ -21,11 +21,11 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == 0)
 	{
-		s1 = "";
+		s1 = '\0';
 	}
 	if (s2 == 0)
 	{
-		s2 = "";
+		s2 = '\0';
 	}
 	length1 = strlength(s1);
 	length2 = strlength(s2);
