@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * print_name - prints a name 
+ * print_name - prints a name
  *
- * @*name - address of a name
- * @*f: funtion for printing
+ * @name: address of a name
+ * @f: funtion for printing
  *
  *
  */
